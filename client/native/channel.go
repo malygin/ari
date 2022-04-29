@@ -441,6 +441,7 @@ func (c *Channel) StageExternalMedia(key *ari.Key, opts ari.ExternalMediaOptions
 		params.Add("transport", opts.Transport)
 		params.Add("connection_type", opts.ConnectionType)
 		params.Add("direction", opts.Direction)
+		params.Add("channelId", opts.ChannelID)
 		if opts.Data != "" {
 			params.Add("data", opts.Data)
 		}
